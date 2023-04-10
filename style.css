@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+#form{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    justify-content: center;
+    gap: 25px
+}
+
+#searchInput{
+    width: 80%;
+    outline: none;
+    border-radius: 5px;
+    height: 30px;
+    text-align: center;
+}
+
+.button-wrapper{
+    display: flex;
+    gap: 15px;
+}
+
+#searchButton, #clearButton{
+    width: 12rem;
+    height:30px ;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+
+#searchButton{
+    background-color: rgb(65, 64, 64);
+}
+
+#clearButton{
+    background-color: rgb(157, 12, 12);
+}
+
+#searchButton:active, #clearButton:active{
+    scale:0.96;
+}
+
+.imageList-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.card{
+    margin: 0.7rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 0.5rem;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+
+
+@media screen and (max-width: 500px) {
+    #searchButton, #clearButton{
+        width: 9rem;
+    }
+    #searchInput{
+        width: 90%;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    #searchButton, #clearButton{
+        width: 7rem;
+    }
+    
+    
+  }
+
+  @media screen and (max-width: 320px) {
+    #searchButton, #clearButton{
+        width: 6rem;
+    }
+    
+    
+  }
